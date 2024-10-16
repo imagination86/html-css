@@ -1,0 +1,93 @@
+
+@font-face {
+    font-family: 'DM sans', Arial;
+    src: url(fonts/DMSans-VariableFont_opsz\,wght.ttf)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-family:'DM sans', Arial;
+color: #fff;
+padding-top: 43px;
+max-width:1440px;
+background-color: #191919;
+margin:auto;    
+}
+
+h1,h2,h3,h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 1.25;
+    letter-spacing: 3.2px; 
+}
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 50px;
+padding-right: 70px;
+padding-bottom: 84px;
+}
+.logo {
+opacity: 0.7;
+}
+
+.menu__link {
+    font-size: 17px;
+    color: #fff;
+    text-decoration: 0;
+}
+.menu__link:hover {
+    color: #118DA8;
+    transition-duration: 0.2s;
+}
+.menu__list {
+display: flex;
+padding: 0;
+margin: 0;
+list-style-type: none;
+column-gap: 40px;
+
+}
+
+.menu__link--active {
+color: #118DA8;
+}
+
+.banner {
+    display: flex;
+    column-gap: 60px;
+}
+.banner__pic {
+    padding-left:70px;
+    position: relative;
+}
+
+.banner__light {
+    position: absolute;
+    top:-27px;
+    left:44px;
+}
+.banner__title {
+    padding-top: 294px;
+    padding-right: 40px;
+}
+.banner__social {
+padding-left:22px;
+padding-top:90px;
+}
+.social__list{
+    column-gap: 17px;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
