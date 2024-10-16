@@ -28,6 +28,14 @@ h1 {
     line-height: 1.25;
     letter-spacing: 3.2px; 
 }
+
+h2 {
+    font-size: 64px;
+}
+
+p {
+    font-size: 22px;
+}
 .header {
 display: flex;
 justify-content: space-between;
