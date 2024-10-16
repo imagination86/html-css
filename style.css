@@ -1,15 +1,15 @@
 
 @font-face {
-    font-family: 'DM sans', Arial;
+    font-family: 'DM sans';
     src: url(fonts/DMSans-VariableFont_opsz\,wght.ttf)
 }
-
 * {
     box-sizing: border-box;
 }
 
 body {
-font-family:'DM sans', Arial;
+font-family: 'DM sans', sans-serif;
+font-style: normal;
 color: #fff;
 padding-top: 43px;
 max-width:1440px;
@@ -21,6 +21,7 @@ h1,h2,h3,h4 {
     margin: 0;
     padding: 0;
     font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
@@ -31,6 +32,8 @@ h1 {
 
 h2 {
     font-size: 64px;
+    letter-spacing: 2.88px;
+    line-height: 1.24;
 }
 
 p {
@@ -86,7 +89,7 @@ color: #118DA8;
 }
 .banner__title {
     padding-top: 294px;
-    padding-right: 40px;
+    padding-right: 100px;
 }
 .banner__social {
 padding-left:22px;
@@ -104,10 +107,81 @@ padding-top:90px;
     padding-left:70px;
     padding-right:70px;
 }
-.subtitle {
+.container__subtitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom:35px;
+}
+
+.button {
+    display: flex;
+    width: 178px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #118DA8;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    
+}
+
+.container__content {
+    display: flex;
+    border-radius: 32px;
+    background: #000;
+    padding: 40px;
+    margin-bottom: 40px;
+
+}
+
+.content__info {
+    padding-left:50px;
+}
+
+.info__episode-name {
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 18px;
+    border-radius: 6px;
+    background: #191919;   
+    line-height: 1.5;
+    padding: 0 16px;
+    margin-top: 8px;
+    margin-bottom: 48px;
+}
+
+.info__episode-number {
+
+    color: #118DA8;
+    padding-bottom:18px;
+    line-height: 1.58;
+}
+
+.info__title {
+    line-height: 1.1;
+    letter-spacing: 2.56px;
+    padding-bottom:28px;
+    padding-right:20px;
+}
+
+.info__text {
+
+margin: 0;
+font-size: 22px;
+line-height: 1.5;
+padding-bottom:18px;
+opacity:0.7;
+}
+
+.button--content {
+    width: 208px;
+    font-size: 18px;
 }
 
