@@ -1,11 +1,5 @@
-
-@font-face {
-    font-family: 'DM sans';
-    src: url(fonts/DMSans-VariableFont_opsz\,wght.ttf)
-}
-* {
-    box-sizing: border-box;
-}
+@import url(DMSans.css);
+@import url(css-normalize.css);
 
 body {
 font-family: 'DM sans', sans-serif;
@@ -20,20 +14,20 @@ margin:auto;
 h1,h2,h3,h4 {
     margin: 0;
     padding: 0;
-    font-weight: 400;
-    font-style: normal;
 }
 
 h1 {
     font-size: 70px;
     line-height: 1.25;
-    letter-spacing: 3.2px; 
+    letter-spacing: 3.2px;
+    font-weight: 400; 
 }
 
 h2 {
     font-size: 64px;
     letter-spacing: 2.88px;
     line-height: 1.24;
+    font-weight: 400; 
 }
 
 p {
@@ -51,28 +45,28 @@ padding-bottom: 84px;
 opacity: 0.7;
 }
 
-.menu__link {
+.header__menu-link {
     font-size: 17px;
     color: #fff;
-    text-decoration: 0;
 }
-.menu__link:hover {
+.header__menu-link:hover {
     color: #118DA8;
     transition-duration: 0.2s;
 }
-.menu__list {
+.header__menu-list {
 display: flex;
-padding: 0;
-margin: 0;
-list-style-type: none;
 column-gap: 40px;
-
 }
 
-.menu__link--active {
+.header__menu-link--active {
 color: #118DA8;
 }
-
+.underline-image {
+    background-origin: border-box;
+    background-image: url(images/Vector.svg);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
 .banner {
     display: flex;
     column-gap: 60px;
@@ -95,14 +89,14 @@ color: #118DA8;
 padding-left:22px;
 padding-top:90px;
 }
-.social__list{
+.banner__social-list {
     column-gap: 17px;
-    padding: 0;
+    padding-top:16px;
     display: flex;
     list-style-type: none;
 }
 
-.container-episodes {
+.container {
     padding-top: 100px;
     padding-left:70px;
     padding-right:70px;
@@ -111,7 +105,7 @@ padding-top:90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom:35px;
+    padding-bottom:70px;
 }
 
 .button {
@@ -129,7 +123,6 @@ padding-top:90px;
     text-decoration: none;
     color: #fff;
     font-size: 17px;
-    
 }
 
 .container__content {
@@ -144,7 +137,7 @@ padding-top:90px;
     padding-left:50px;
 }
 
-.info__episode-name {
+.container__episode-name {
     display: inline-block;
     flex-shrink: 0;
     font-size: 18px;
@@ -156,28 +149,28 @@ padding-top:90px;
     margin-bottom: 48px;
 }
 
-.info__episode-number {
+.container__episode-number {
 
     color: #118DA8;
     padding-bottom:18px;
     line-height: 1.58;
 }
 
-.info__title {
+.container__title {
     line-height: 1.1;
     letter-spacing: 2.56px;
     padding-bottom:28px;
     padding-right:20px;
 }
 
-.info__text {
+.container__info-text {
 margin: 0;
 font-size: 22px;
 line-height: 1.5;
 padding-bottom:18px;
 opacity:0.7;
 }
-.button--content {
+.container__button {
     width: 208px;
     font-size: 18px;
 }
@@ -194,7 +187,7 @@ opacity:0.7;
     margin-bottom:200px;
 }
 .caster__text {
- padding-top:148px;
+    padding-top:148px;
 }
 
 .caster__pointer {
@@ -233,12 +226,9 @@ opacity:0.7;
 .subsribe {
 padding-left:70px;
 padding-right:70px;
-margin-bottom:200px;
+margin-bottom:70px;
 }
-.subscribe__text{
-
-}
-.subscribe__container {
+.subscribe__block {
     display: flex;
     justify-content: space-between;
     border-radius: 32px;
@@ -247,7 +237,7 @@ margin-bottom:200px;
     position: relative;
 
 }
-.subscribe__text--info {
+.subscribe__text-info {
     font-size: 18px;
     color: #118DA8;
 }
@@ -284,6 +274,7 @@ width:522px;
     outline: none;
 }
 .button--submit {
+    color: #fff;
     width: 87px;
 }
 .light2 {
