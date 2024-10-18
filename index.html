@@ -8,42 +8,171 @@
 </head>
 <body>
 <header class="header">
-    <a href="" class="header__logo">
-        <img src="images/IMAGE.png" alt="Castaway" class="logo" width="160px"
+    <a href="">
+        <img src="images/logo.svg" alt="Castaway" class="logo" width="160px"
         height="33px">
     </a>
     <nav class="header__nav">
-        <ul class="menu__list">
-            <li class="menu__item"><a href="" class="menu__link menu__link--active">Home</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Episodes</a></li>
-            <li class="menu__item"><a href="" class="menu__link">About</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
-
+        <ul class="header__menu-list">
+            <li><a href="" class="header__menu-link header__menu-link--active">Home</a></li>
+            <li><a href="" class="header__menu-link">Episodes</a></li>
+            <li><a href="" class="header__menu-link">About</a></li>
+            <li><a href="" class="header__menu-link">Contact</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <section class="banner">
         <div class="banner__pic">
-            <img src="images/banner.png" alt="banner" width="650" height="873" class="banner__image">
+            <img src="images/banner.png" class="banner__pic--size" alt="banner" width="650" height="873" class="banner__image">
             <img src="images/light1.png" alt="light" class="banner__light" width="68" height="74">
         </div>
         <div>
-            <div class="banner__title"><h1>Take your podcast to the next <b>level</b></h1></div>
+            <div class="banner__title"><h1>Take your podcast to the <span class="underline-image">next</span> <b>level</b></h1></div>
             <div class="banner__social">
                 <div>Listen on</div>
                 <div>
-                    <ul class="social__list">
-                        <li><a href="https://open.spotify.com/"><img src="images/Spotify.png" width="32" height="32" alt="Spotify"></a></li>
-                        <li><a href="https://pocketcasts.com/"><img src="images/Pocket Cast.png" width="32" height="32" alt="Pocket Cast"></a></li>
-                        <li ><a href="https://castbox.fm/"><img src="images/Cast Box.png" width="32" height="32" alt="CastBox"></a></li>
-                        <li><a href="https://www.apple.com/apple-podcasts/"><img src="images/Apple Podcast.png" width="32" height="32" alt="Apple Podcast"></a></li>
-                        <li><a href="https://overcast.fm/"><img src="images/Overcast.png" width="32" height="32" alt="Overcast"></a></li>
+                    <ul class="banner__social-list">
+                        <li><a href="https://open.spotify.com/"><img src="images/Spotify.svg" width="32" height="32" alt="Spotify"></a></li>
+                        <li><a href="https://pocketcasts.com/"><img src="images/pocket cast.svg" width="32" height="32" alt="Pocket Cast"></a></li>
+                        <li ><a href="https://castbox.fm/"><img src="images/Cast Box.svg" width="32" height="32" alt="CastBox"></a></li>
+                        <li><a href="https://www.apple.com/apple-podcasts/"><img src="images/Apple Podcast.svg" width="32" height="32" alt="Apple Podcast"></a></li>
+                        <li><a href="https://overcast.fm/"><img src="images/Overcast.svg" width="32" height="32" alt="Overcast"></a></li>
                     </ul>
                 </div>
 
         </div>
     </section>
-    
+    <section class="container">
+            <div class="container__subtitle">
+            <div><h2>Latest episodes</h2></div>
+            <div class="button"><a href="/" >View all episodes</a></div>   
+            </div>
+            <div class="container__content">
+                <div><img src="images/ep-1.png" width="389" height="465" alt="Episode 1"></div>
+                <div class="content__info">
+                    <div class="container__episode-name">Gear</div>
+                    <div class="container__episode-number">Episode 3</div>
+                    <h2 class="container__title">Should you get outboard audio gear?</h2>
+                    <p class="container__info-text">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
+                    <div class="button container__button"><a href="/">View all episodes</a></div>
+                </div>
+            </div>
+            <div class="container__content">
+                <div><img src="images/ep-2.png" width="389" height="432" alt="Episode 1"></div>
+                <div class="content__info">
+                    <div class="container__episode-name">Tips & Tricks</div>
+                    <div class="container__episode-number">Episode 2</div>
+                    <h2 class="container__title container__title--ep2">Mic tricks to take you to the next level</h2>
+                    <p class="container__info-text">Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</p>
+                    <div class="button container__button"><a href="/">View all episodes</a></div>
+                </div>
+            </div>
+            <div class="container__content">
+                <div><img src="images/ep-3.png" width="389" height="432" alt="Episode 1"></div>
+                <div class="content__info">
+                    <div class="container__episode-name">Gear</div>
+                    <div class="container__episode-number">Episode 1</div>
+                    <h2 class="container__title">The best microphone under $200</h2>
+                    <p class="container__info-text">With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</p>
+                    <div class="button container__button"><a href="/">View all episodes</a></div>
+                </div>
+            </div>
+            <div class="container__caster">
+                <div class="caster__text">
+                    <div class="caster__pointer"><img class="pointer-pic" width="68"
+                        height="36" src="images/pointer.svg" alt=""></div>
+                    <div class="podcast__name">Meet your host</div>
+                    <div class="caster__name">Jacob Paulaner</div>
+                    <div class="podcast__info podcast__info--1">Jacob has a background in audio engineering, and has been podcasting since the early days.</div>
+                    <div class="podcast__info">He’s here to help you level up your game by sharing everything he’s learned along the way.</div>
+                </div>
+                <div class="caster__img"><img src="images/caster.png" width="650" height="743" alt=""></div>
+            </div>
+    </section>
+    <section class="subsribe">
+        <div class="subscribe__block">
+            <div class="subscribe__text">
+                <div class="subscribe__text-info">Email Newsletter</div>
+                <div class="subscribe__title">Subscribe for updates</div>
+                <div class="light2"><img src="images/light2.png" width="147" height="91" alt=""></div>
+            </div>
+            <form class="subscribe__form"> 
+                <input class="form__name" type="name" placeholder="Name" required>
+                <input class="form__email" type="email" placeholder="Email" required>
+                <button class="button button--submit">Submit</button>
+            </form>
+        </div>
+    </section>    
+    <section class="reviews">
+        <div class="reviews__container">
+            <div class="reviews__block">
+                <div class="reviews__rating">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    </div>
+                <div class="reviews__text">I can’t recommend this podcast enough</div>
+                <div class="reviews__author">Betty Lacey</div>
+            </div>
+            <div class="reviews__block">
+                <div class="reviews__rating">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    </div>
+                <div class="reviews__text">Jacob is the best in the business</div>
+                <div class="reviews__author">Adam Driver</div>
+            </div>
+            <div class="reviews__block">
+                <div class="reviews__rating">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    </div>
+                <div class="reviews__text">A wealth of audio knowledge</div>
+                <div class="reviews__author">Marcus Brown</div>
+            </div>
+            <div class="reviews__block">
+                <div class="reviews__rating">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    </div>
+                <div class="reviews__text">Every episode is a gem!</div>
+                <div class="reviews__author">Jessica Knowl</div>
+            </div>
+            <div class="reviews__block">
+                <div class="reviews__rating">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    </div>
+                <div class="reviews__text">Whoa whoa, let me take some notes!</div>
+                <div class="reviews__author">Scott Adams</div>
+            </div>
+            <div class="reviews__block">
+                <div class="reviews__rating">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    <img src="images/star.svg" height="17" width="17" alt="star">
+                    </div>
+                <div class="reviews__text">I’ve upped my game considerably since I started listening</div>
+                <div class="reviews__author">Steven Blast</div>
+            </div>
+        </div>
+    </section>
 </main>
 </html>
