@@ -8,10 +8,13 @@
 </head>
 <body>
 <header class="header">
+    <div>
     <a href="">
         <img src="images/logo.svg" alt="Castaway" class="logo" width="160px"
         height="33px">
     </a>
+    </div>
+    <div>
     <nav class="header__nav">
         <ul class="header__menu-list">
             <li><a href="" class="header__menu-link header__menu-link--active">Home</a></li>
@@ -20,14 +23,15 @@
             <li><a href="" class="header__menu-link">Contact</a></li>
         </ul>
     </nav>
+</div>
 </header>
 <main>
     <section class="banner">
         <div class="banner__pic">
-            <img src="images/banner.png" class="banner__pic--size" alt="banner" width="650" height="873" class="banner__image">
+            <img src="images/banner.png" class="banner__pic--size" alt="banner" class="banner__image">
             <img src="images/light1.png" alt="light" class="banner__light" width="68" height="74">
         </div>
-        <div>
+        <div class="banner__info">
             <div class="banner__title"><h1>Take your podcast to the <span class="underline-image">next</span> <b>level</b></h1></div>
             <div class="banner__social">
                 <div>Listen on</div>
@@ -49,8 +53,8 @@
             <div class="button"><a href="/" >View all episodes</a></div>   
             </div>
             <div class="container__content">
-                <div><img src="images/ep-1.png" width="389" height="465" alt="Episode 1"></div>
-                <div class="content__info">
+                <div class="container__img"><img class="container__img-pic" src="images/ep-1.png" alt="Episode 3"></div>
+                <div class="container__info">
                     <div class="container__episode-name">Gear</div>
                     <div class="container__episode-number">Episode 3</div>
                     <h2 class="container__title">Should you get outboard audio gear?</h2>
@@ -59,8 +63,8 @@
                 </div>
             </div>
             <div class="container__content">
-                <div><img src="images/ep-2.png" width="389" height="432" alt="Episode 1"></div>
-                <div class="content__info">
+                <div class="container__img"><img class="container__img-pic" src="images/ep-2.png"  alt="Episode 1"></div>
+                <div class="container__info">
                     <div class="container__episode-name">Tips & Tricks</div>
                     <div class="container__episode-number">Episode 2</div>
                     <h2 class="container__title container__title--ep2">Mic tricks to take you to the next level</h2>
@@ -69,8 +73,8 @@
                 </div>
             </div>
             <div class="container__content">
-                <div><img src="images/ep-3.png" width="389" height="432" alt="Episode 1"></div>
-                <div class="content__info">
+                <div class="container__img"><img class="container__img-pic" src="images/ep-3.png" alt="Episode 2"></div>
+                <div class="container__info">
                     <div class="container__episode-name">Gear</div>
                     <div class="container__episode-number">Episode 1</div>
                     <h2 class="container__title">The best microphone under $200</h2>
@@ -87,7 +91,7 @@
                     <div class="podcast__info podcast__info--1">Jacob has a background in audio engineering, and has been podcasting since the early days.</div>
                     <div class="podcast__info">He’s here to help you level up your game by sharing everything he’s learned along the way.</div>
                 </div>
-                <div class="caster__img"><img src="images/caster.png" width="650" height="743" alt=""></div>
+                <div class="caster__img"><img class="caster__img--pic" src="images/caster.png" alt=""></div>
             </div>
     </section>
     <section class="subsribe">
@@ -95,7 +99,7 @@
             <div class="subscribe__text">
                 <div class="subscribe__text-info">Email Newsletter</div>
                 <div class="subscribe__title">Subscribe for updates</div>
-                <div class="light2"><img src="images/light2.png" width="147" height="91" alt=""></div>
+                <div class="light2"><img src="images/light2.png"  alt=""></div>
             </div>
             <form class="subscribe__form"> 
                 <input class="form__name" type="name" placeholder="Name" required>
@@ -174,24 +178,27 @@
             </div>
         </div>
     </section>
+    
 </main>
 
 <footer class="footer">
-    <div><div><img src="images/logo_footer.svg" width="222" height="45" alt="Castaway"></div>
+<div class="footer__info">
+            <div class="footer__logo"><img src="images/logo_footer.svg" width="222" height="45" alt="Castaway">
+            </div>
     <div class="footer__social">
-        <ul class="footer_social-list">
+        <ul class="footer__social-list">
             <li><a href="/"><img src="images/logo_inst.svg" width="24" height="24" alt="Instagram"></a></li>
             <li><a href="/"><img src="images/logo_tw.svg" width="24" height="24" alt="Twitter"></a></li>
             <li><a href="/"><img src="images/logo_fb.svg" width="24" height="24" alt="Facebook"></a></li>
         </ul>
-    </div></div>
-    
+</div>
+</div>  
     <div class="footer__links-col-1">
     <div class="footer__links"><a href="/">Home</a></div>
     <div class="footer__links"><a href="/">About</a></div>
     <div class="footer__links"><a href="/">Episodes</a></div>
     <div class="footer__links"><a href="/">Contact</a></div>
-    </div>
+</div>
     <div class="footer__links-col-2">
     <div class="footer__links"><a href="/">Style Guide</a></div>
     <div class="footer__links"><a href="/">Instructions</a></div>
@@ -199,7 +206,7 @@
     <div class="footer__links"><a href="/">Credit</a></div>
     <div class="footer__links"><a href="/">Powered by Webflow</a></div>
     <div class="footer__links"><a href="/">Licenses</a></div>
-</div>
+    </div>
     <div class="footer__podcast-platform">
         <ul class="footer__social-platform-list">
             <li><a href="https://open.spotify.com/"><img src="images/Spotify.svg" width="32" height="32" alt="Spotify"></a></li>
@@ -209,5 +216,6 @@
             <li><a href="https://overcast.fm/"><img src="images/Overcast.svg" width="32" height="32" alt="Overcast"></a></li>
         </ul>
     </div>
+    
 </footer>
 </html>
