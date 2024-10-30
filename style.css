@@ -118,6 +118,8 @@ padding-top:90px;
 
 .container__subtitle {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
     justify-content: space-between;
     align-items: center;
     padding-bottom:70px;
@@ -141,15 +143,26 @@ padding-top:90px;
 }
 
 .container__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(100px, 389px) 1fr;
     border-radius: 32px;
     background: #000;
     padding: 40px;
     margin-bottom: 60px;
+    gap: 50px;
 }
 
+.container__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container__img-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .container__info {
-    padding-left:50px;
     max-width:778px;
 }
 
@@ -202,7 +215,11 @@ opacity:0.7;
     column-gap: 60px;
     margin-bottom:200px;
 }
+.caster__img {
+    max-width:650px;
+}
 .caster__text {
+    max-width: 590px;
     padding-top:148px;
 }
 
@@ -370,9 +387,29 @@ opacity: 0.7;
     column-gap: 17px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width:1050px) {
     h1 {
         font-size: 50px;}
+    h2 {
+        font-size: 40px;
+    }
+    .container__info {
+        font-size: 18px;
+    }
+    .container__content {
+        display: grid;
+        grid-template-columns: minmax(100px, 389px) 55%;
+        gap: 30px;
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+    .container__img-pic {
+        object-fit: cover;
+        object-position: right;
+    }
+    .container__episode-name {
+        margin-bottom: 30px;
+    }
 }
 @media (max-width:800px) {
     .banner__social {
@@ -386,8 +423,12 @@ opacity: 0.7;
         padding-right: 50px;
 
     }
+    .container {
+        padding-left:50px;
+        padding-right:50px;
+    }
     .banner__pic {
-        width: 100vw;
+        width: 100%;
         height:400px;
     }
     .banner__pic--size {
@@ -397,3 +438,19 @@ opacity: 0.7;
         border-radius: 20px;
     }
 }
+@media (max-width:650px){
+    .container__subtitle {
+        display:flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        padding-bottom:50px;
+    }
+    .container__content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .container__img {
+        height: 200px;
+    }
+}
+
