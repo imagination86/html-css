@@ -9,21 +9,25 @@
 <body>
 <header class="header">
     <div>
-    <a href="">
-        <img src="images/logo.svg" alt="Castaway" class="logo" width="160px"
-        height="33px">
-    </a>
+        <a href="">
+            <img src="images/logo.svg" alt="Castaway" class="logo" width="160px" height="33px">
+        </a>
     </div>
-    <div>
-    <nav class="header__nav">
-        <ul class="header__menu-list">
-            <li><a href="" class="header__menu-link header__menu-link--active">Home</a></li>
-            <li><a href="" class="header__menu-link">Episodes</a></li>
-            <li><a href="" class="header__menu-link">About</a></li>
-            <li><a href="" class="header__menu-link">Contact</a></li>
-        </ul>
-    </nav>
-</div>
+    <div class="header__menu-container">
+        <button class="burger-menu" aria-label="Toggle menu">
+            <span class="burger-menu__line"></span>
+            <span class="burger-menu__line"></span>
+            <span class="burger-menu__line"></span>
+        </button>
+        <nav class="header__nav">
+            <ul class="header__menu-list">
+                <li><a href="#" class="header__menu-link header__menu-link--active">Home</a></li>
+                <li><a href="#" class="header__menu-link">Episodes</a></li>
+                <li><a href="#" class="header__menu-link">About</a></li>
+                <li><a href="#" class="header__menu-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
 <section class="banner">
@@ -218,4 +222,5 @@
     </div>
     
 </footer>
+<script src="script.js"></script>
 </html>
